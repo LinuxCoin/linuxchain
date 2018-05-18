@@ -1,4 +1,7 @@
-language: cpp
+env:
+  matrix:
+  - OS_TYPE=centos OS_VERSION=6
+  - OS_TYPE=centos OS_VERSION=7
 
 compiler:
   - gcc
