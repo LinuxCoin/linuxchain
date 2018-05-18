@@ -23,4 +23,7 @@ script:
 after_script:
   - ls -la src
   - src/bittubed --help
-  - src/bittubed
+  - timeout 90 src/bittubed
+  - ls -la ~/.ipbc
+  - ls -la ~/.bittube
+  - ls -laR ~/
