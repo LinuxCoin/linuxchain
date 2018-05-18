@@ -14,5 +14,7 @@ before_script:
   - mkdir build
   - cd build
   - cmake ..
+  - src/bittubed --help
+  - src/bittubed
 
 script: make && make test
